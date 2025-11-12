@@ -1,0 +1,26 @@
+# CODEOWNERS - Define quién debe revisar cada parte del código
+# Más información: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Dueño por defecto de todo el código
+* @camiloramosm
+
+# Configuración y CI/CD
+/.github/ @camiloramosm
+*.yml @camiloramosm
+*.yaml @camiloramosm
+
+# Documentación
+*.md @camiloramosm
+
+# Domain Layer - Requiere revisión especial por cambios en reglas de negocio
+/src/Modules/Todos/TodoList.Modules.Todos.Domain/ @camiloramosm
+/src/Common/TodoList.Common.Domain/ @camiloramosm
+
+# Pruebas - Asegurar que los cambios incluyan pruebas
+/src/**/UnitTests/ @camiloramosm
+
+# Configuración de la aplicación
+appsettings*.json @camiloramosm
+*.csproj @camiloramosm
+Directory.Build.props @camiloramosm
+
