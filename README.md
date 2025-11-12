@@ -1,6 +1,17 @@
 # TodoList Service - ASP.NET Core 9
 
+[![CI - Build and Test](https://github.com/camiloramosm/taller1_api/actions/workflows/ci.yml/badge.svg)](https://github.com/camiloramosm/taller1_api/actions/workflows/ci.yml)
+
 Servicio de To-Do List desarrollado con ASP.NET Core 9, siguiendo arquitectura de monolito modular y principios de Clean Code, conectado a Supabase (PostgreSQL).
+
+## 📚 Documentación
+
+- 📖 [Guía Rápida de Pull Requests](GUIA_RAPIDA_PR.md) - **¡Comienza aquí!**
+- ⚙️ [Configuración de GitHub CI/CD](CONFIGURACION_GITHUB.md)
+- 🧪 [Pruebas Unitarias](PRUEBAS_UNITARIAS.md)
+- 🏗️ [Estructura del Proyecto](ESTRUCTURA_PROYECTO.md)
+- 🔐 [Configuración de Supabase](CONFIGURACION_SUPABASE.md)
+- 📋 [Reglas de Negocio](REGLAS_DE_NEGOCIO.md)
 
 ## 🏗️ Arquitectura
 
@@ -208,6 +219,43 @@ TodoListService/
 - Swagger/OpenAPI
 - Clean Architecture
 - C# 13
+
+## 🔄 CI/CD y Pull Requests
+
+### Flujo de Trabajo
+
+Este proyecto utiliza **GitHub Actions** para CI/CD automático:
+
+1. **Crea una rama** para tu feature:
+   ```bash
+   git checkout -b feature/mi-funcionalidad
+   ```
+
+2. **Ejecuta las pruebas localmente**:
+   ```bash
+   dotnet test --verbosity normal
+   ```
+
+3. **Crea un Pull Request** en GitHub
+
+4. **GitHub Actions ejecutará automáticamente**:
+   - ✅ Build de la solución
+   - ✅ 36 pruebas unitarias
+   - ✅ Verificación de calidad de código
+
+5. **El PR será aprobado o rechazado automáticamente** basado en los resultados
+
+### Protección de Rama Main
+
+La rama `main` está protegida:
+- ❌ No se permiten push directos
+- ✅ Solo se aceptan cambios mediante Pull Request
+- ✅ Todas las pruebas deben pasar antes del merge
+- ✅ Se requiere al menos 1 aprobación
+
+📖 **Ver guía completa**: [GUIA_RAPIDA_PR.md](GUIA_RAPIDA_PR.md)
+
+⚙️ **Configuración detallada**: [CONFIGURACION_GITHUB.md](CONFIGURACION_GITHUB.md)
 
 ## 📄 Licencia
 
