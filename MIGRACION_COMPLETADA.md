@@ -130,10 +130,11 @@ TodoList.Common.Presentation
 - Microsoft.AspNetCore.App (Framework Reference)
 
 ### Todos.Domain
-- postgrest-csharp 3.4.4
+- postgrest-csharp 3.5.1
 
 ### Todos.Infrastructure
-- supabase-csharp 0.20.1
+- supabase-csharp 0.16.2
+- postgrest-csharp 3.5.1
 - Microsoft.Extensions.Configuration.Abstractions 9.0.0
 - Microsoft.Extensions.DependencyInjection.Abstractions 9.0.0
 
